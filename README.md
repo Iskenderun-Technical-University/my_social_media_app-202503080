@@ -3,10 +3,7 @@
 
 Sosyal Medya Uygulaması Tanıtımı
 
-  Merhabalar, bu projede Swift dili ile sosyal medya uygulaması yapıcaz. Bu uygulamada neler var bundan kısaca bahsedecek olursam öncelikle kullanıcı uygulamaya giriş yapmak için kayıt olması gerekiyor login panelinde hem giriş yap, hemde kayıt yap butonları yer alacak buradan kayıt yap dediğimizde kullanıcı bilgileri veri tabanına kaydedilmiş olacak ve istediği zaman bu kullanıcı bilgileri ile uygulamaya giriş yapabilecek, kullanıcı bilgileri yanlış girdiği takdirde ekrana bir hata mesajı görülecek ve uygulamaya giriş yapılamayacaktır.
-Daha sonra kullanıcı uygulamaya giriş yaptığında 3 ana ekranla karşılacaktır bu ekranlar anasayfa, ayarlar ve kullanıcı sayfası, kullanıcı sayfası üzerinden gönderi oluşturabilecek ve kayıt ettiğinde server'a yüklenecek, Anasayfaya girdiği takdirde yaptığı paylaşımı görebilir ve like butonu ile beğenebilir aynı zamnada farklı kullanıcıların gönderilerini görebilir ve dilediğinde beğenebilir.
-  Şuanda uygulamada yer alacak belli başlı özelliklerden bahsettim. Uygulamayı yaparken aklıma gelecek fikirleri ve güncellemeleri sizlerle paylaşmaktan mutluluk duyarım.
-
+Bu projede Swift dili ile bir sosyal medya uygulaması yapılmaktadır. Kullanıcının uygulamaya giriş yapabilmesi için kayıt ol paneli üzerinden uygulamaya kayıt olması gerekmektedir. Kayıt olunduktan sonra Login paneli üzerinden uygulamaya giriş yapılabilmektedir. Kayıt olunduğunda girilen bilgiler firebase 'e kayıt edilmektedir. Bu sayede kullanıcı bir kere kayıt olduktan sonra istediği zaman aynı hesap bilgileri ile uygulamaya giriş yapabilmektedir. Login işleminde bilgilerin yanlış girilmesi durumunda kullanıcıya hata mesajı gösterilecektir. Uygulamaya giriş yapıldığında 3 ekran ile karşılaşılacaktır. Bu ekranlar; "Home Page", "Settings" ve "Profile" dır. Kullanıcı "Profile" sayfası üzerinden  yeni bir gönderi oluşturabilecektir. "Home Page" sayfasında ise yapılan paylaşımları görebilecek olup dilediği gönderiyi beğenebilecektir.
 
 
 <img width="748" alt="Ekran Resmi 2023-04-28 01 28 19" src="https://user-images.githubusercontent.com/81821335/235004737-b78127f7-d2f3-447a-a7f6-0acdd88b0e00.png">
