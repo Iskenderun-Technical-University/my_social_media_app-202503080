@@ -8,15 +8,16 @@
 import UIKit
 
 class toSettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    var tableView: UITableView!
+    //var tableView: UITableView!
 
+    @IBOutlet weak var tableView: UITableView!
     var mySettings = [Settings]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView = UITableView(frame: view.bounds)
+       // tableView = UITableView(frame: view.bounds)
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
@@ -31,7 +32,7 @@ class toSettingsViewController: UIViewController, UITableViewDelegate, UITableVi
         let setting8 = Settings(settingsName: "Dil")
         let setting9 = Settings(settingsName: "Yardım")
         let setting10 = Settings(settingsName: "Hakkında")
-        let setting11 = Settings(settingsName: "Çıkış")
+       
         
         mySettings.append(setting1)
         mySettings.append(setting2)
@@ -43,11 +44,11 @@ class toSettingsViewController: UIViewController, UITableViewDelegate, UITableVi
         mySettings.append(setting8)
         mySettings.append(setting9)
         mySettings.append(setting10)
-        mySettings.append(setting11)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -58,6 +59,13 @@ class toSettingsViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.contentConfiguration = content
         return cell
     }
+    
+    
+    @IBAction func exitClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toViewController", sender: nil)
+    }
+    
 
    
 }
+
