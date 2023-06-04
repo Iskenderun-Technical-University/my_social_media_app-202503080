@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class toSettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     //var tableView: UITableView!
@@ -62,7 +63,13 @@ class toSettingsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     @IBAction func exitClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toViewController", sender: nil)
+        do{
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: "toViewController", sender: nil)
+        }
+        catch{
+            print("error")
+        }
     }
     
 

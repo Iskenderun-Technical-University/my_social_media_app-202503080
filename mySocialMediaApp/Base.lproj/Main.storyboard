@@ -32,14 +32,38 @@
                     <view key="view" contentMode="scaleToFill" id="eek-V6-19F">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tapToSelect" translatesAutoresizingMaskIntoConstraints="NO" id="AVZ-5J-Vty">
+                                <rect key="frame" x="52" y="99" width="300" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-5m-JHg">
+                                <rect key="frame" x="167" y="710" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="save"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-cu-ykh">
+                                <rect key="frame" x="52" y="361" width="309" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WSW-DV-Jg5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Question" image="plus.app.fill" catalog="system" id="TX5-sd-m9M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0c-yg-cnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <command title="Item" id="Inf-2T-xrz">
+                    <alternates>
+                        <commandAlternate id="lDm-pk-lqH"/>
+                        <commandAlternate id="FmW-5X-Sfc"/>
+                    </alternates>
+                </command>
             </objects>
-            <point key="canvasLocation" x="-1022" y="782"/>
+            <point key="canvasLocation" x="-1022.1374045801526" y="781.69014084507046"/>
         </scene>
         <!--Search-->
         <scene sceneID="m3Q-ae-k9T">
@@ -109,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJC-Lt-5Kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-941.22137404580144" y="-742.25352112676057"/>
+            <point key="canvasLocation" x="-1552" y="-829"/>
         </scene>
         <!--To Settings View Controller-->
         <scene sceneID="zVL-vg-BJW">
@@ -221,7 +245,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Pa-Av-DFF"/>
                     <connections>
-                       
                         <outlet property="tableView" destination="wrw-g8-aQV" id="Je1-yc-9AD"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="7oT-Ti-1kS"/>
                     </connections>
@@ -233,7 +256,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kYK-AZ-O25">
             <objects>
-                <tabBarController id="4Fi-aN-ZE5" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="4Fi-aN-ZE5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="a7c-Kn-sGc"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QhO-kx-Wbc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -338,6 +361,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="tapToSelect" width="512" height="512"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
