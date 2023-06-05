@@ -64,12 +64,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0c-yg-cnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <command title="Item" id="Inf-2T-xrz">
-                    <alternates>
-                        <commandAlternate id="lDm-pk-lqH"/>
-                        <commandAlternate id="FmW-5X-Sfc"/>
-                    </alternates>
-                </command>
             </objects>
             <point key="canvasLocation" x="-1022.1374045801526" y="781.69014084507046"/>
         </scene>
@@ -130,6 +124,10 @@
                                     <action selector="settingsClicked:" destination="lOg-PL-bNW" eventType="touchUpInside" id="UN7-zt-sC9"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFP-6H-ltG">
+                                <rect key="frame" x="16" y="75" width="142" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kFp-Vp-tV5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -141,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJC-Lt-5Kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1552" y="-829"/>
+            <point key="canvasLocation" x="-1553.4351145038167" y="-829.57746478873241"/>
         </scene>
         <!--To Settings View Controller-->
         <scene sceneID="zVL-vg-BJW">
