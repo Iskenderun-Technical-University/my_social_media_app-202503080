@@ -42,6 +42,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="save"/>
+                                <connections>
+                                    <action selector="actionUploadButton:" destination="Jbn-7W-HT4" eventType="touchUpInside" id="HMy-1V-FTY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-cu-ykh">
                                 <rect key="frame" x="52" y="361" width="309" height="34"/>
@@ -54,6 +57,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Question" image="plus.app.fill" catalog="system" id="TX5-sd-m9M"/>
+                    <connections>
+                        <outlet property="commentText" destination="tl9-cu-ykh" id="1ej-eo-WEk"/>
+                        <outlet property="imageView" destination="AVZ-5J-Vty" id="L2l-4n-mfU"/>
+                        <outlet property="uploadButton" destination="WjB-5m-JHg" id="DHq-tc-6M7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0c-yg-cnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <command title="Item" id="Inf-2T-xrz">
